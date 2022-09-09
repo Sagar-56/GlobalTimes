@@ -1,0 +1,336 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card_div {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(135deg, #fff 59%, #000 59%, #f4d03f 52%);
+}
+.card_div nav {
+  position: fixed;
+  position: relative;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 100;
+  overflow: hidden;
+}
+.card_div .left-ul li {
+  position: relative;
+  list-style: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #212f3d;
+}
+.card_div nav .right-ul {
+  position: relative;
+  display: flex;
+  list-style: none;
+}
+.card_div nav .right-ul li {
+  position: relative;
+  padding: 1rem 2.9rem;
+  animation: back 0.5s ease-in-out;
+}
+.card_div nav .right-ul li:hover {
+  padding: 1rem 2.9rem;
+  background: #f4d03f;
+  border-radius: 3px;
+  @keyframes back {
+    0% {
+      left: 0%;
+      background: #fff;
+    }
+    50% {
+      left: 50%;
+      background: #fff;
+    }
+    75% {
+      left: 75%;
+      background: #fff;
+    }
+    100% {
+      left: 100%;
+      background: #000;
+    }
+  }
+}
+.card_div nav .right-ul li:hover a {
+  color: #fff;
+}
+.card_div nav .right-ul li a {
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.card_div nav .login-account {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background: #03a9f4;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 2px solid #03a9f4;
+}
+.card_div nav .login-account:hover {
+  background: #f4d03f;
+}
+.card_div nav .login-account:hover li {
+  color: #000;
+}
+.card_div nav .login-account li {
+  position: relative;
+  font-size: 20px;
+  list-style: none;
+  color: #fff;
+}
+.card_div nav .login-account li ion-icon {
+  position: relative;
+  vertical-align: middle;
+  font-size: 22px;
+}
+/* homepage design */
+
+.card_div .home {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr;
+  grid-template-areas: "ads-content card-data";
+  margin-top: 50px;
+}
+.card_div .ads-content {
+  position: relative;
+  /* background: #000; */
+  width: 600px;
+  height: auto;
+  padding-left: 4rem;
+  grid-area: ads-content;
+}
+.card_div .ads-content .top-ads {
+  position: relative;
+}
+.card_div .ads-content .top-ads button {
+  position: relative;
+  width: 200px;
+  height: 45px;
+  background-color: #03a9f4;
+  border: #03a9f4;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 1px #03a9f4;
+  transition: 0.5s;
+}
+.card_div .ads-content .top-ads button:hover {
+  background: transparent;
+  color: #000;
+}
+
+.card_div .ads-content .bottom-ads {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+.card_div .ads-content .bottom-ads div {
+  position: relative;
+}
+.card_div .ads-content .bottom-ads h6 img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  vertical-align: middle;
+}
+.card_div .ads-content .bottom-ads h6 {
+  position: relative;
+  font-size: 17px;
+  color: #34495e;
+}
+.card_div .ads-content .bottom-ads p {
+  position: relative;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card_div .card-data {
+  position: relative;
+  align-content: flex-start;
+  grid-area: card-data;
+  width: 100%;
+  margin-right: 2rem;
+}
+.card_div .card-data .card-data-sec {
+  position: relative;
+}
+.card_div .card-data .card-data-input {
+  position: relative;
+  padding: 1rem 2rem;
+  margin-left: -8rem;
+  margin-bottom: 3rem;
+}
+.card_div .card-data .card-data-input label input {
+  position: relative;
+  width: 350px;
+  height: 45px;
+  outline-color: #f4d03f;
+  border: 2px solid #f4d03f;
+}
+.card_div .card-data .card-data-input label ion-icon {
+  position: absolute;
+  color: #000;
+  font-size: 20px;
+  margin: 12px -30px;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: block;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+input[type="search"] {
+  padding-left: 10px;
+}
+.card_div .card-data1 {
+  width: 400px;
+  height: 300px;
+  /* margin-left: -5rem; */
+  box-shadow: 0px 0px 15px 1px rgb(255, 255, 255);
+  border-radius: 6px;
+  padding: 0 1rem;
+  display: grid;
+  align-content: flex-end;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(./Proads.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.card_div .card-data1:hover h2,
+p {
+  opacity: 1;
+}
+.card_div .card-data1:hover p {
+  opacity: 1;
+}
+.card_div .card-data1 h2 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffff;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.card_div .card-data1 p {
+  font-size: 15px;
+  font-family: monospace;
+  position: relative;
+  color: #ffff;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.card_div .card-data2 {
+  width: 200px;
+  height: 200px;
+  background: #e8e8e8;
+}
+.card_div .card-data3 {
+  width: 200px;
+  height: 200px;
+  background: #ff0000;
+}
+.sideBarButton {
+  display: none;
+}
+@media screen and (max-width: 1095px) {
+  .card_div .home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas:
+      "ads-content"
+      "card-data";
+    margin-top: 10px;
+  }
+
+  .card_div {
+    width: 100% !important;
+    display: inline-block;
+  }
+  .card_div nav {
+    padding: 0 1rem;
+  }
+  .card_div .ads-content {
+    width: auto;
+    height: auto;
+    word-wrap: break-word;
+    padding: 0 2rem;
+  }
+  .card_div .ads-content .top-ads {
+    position: relative;
+  }
+  .card_div .ads-content .top-ads button:hover {
+    background: transparent;
+    color: #000;
+  }
+
+  .card_div .ads-content .bottom-ads {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .card_div .card-data {
+    margin-right: 0rem;
+  }
+  .card_div .card-data .card-data-input {
+    padding: 1rem 2rem;
+  }
+  .card_div .card-data .card-data-input {
+    margin-left: 0rem;
+  }
+  .card_div .card-data1 {
+    width: 300px;
+    height: 300px;
+    padding: 0 2rem;
+    border-radius: 6px;
+    margin: 0 4rem;
+    margin-bottom: 2.5rem;
+  }
+  .ulSideBar {
+    display: block;
+  }
+  .sideBarButton {
+    display: none;
+  }
+  .ulSideBar {
+    display: none !important;
+  }
+  .sideBarButton {
+    display: block;
+  }
+  .sideBarButton button {
+    font-size: 30px;
+    border: none;
+    color: #34495e;
+    outline: none;
+    background: transparent;
+  }
+}
